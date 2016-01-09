@@ -17,7 +17,7 @@ You should see the following output (this executes the statement `"1+1"` in JSON
 An example of this library's usage is:
 
 ```js
-var zorba = require('zorba');
+var zorba = require('zorba-node');
 
 try {
   var result = zorba.execute('let $days-left := days-from-duration(xs:date("2016-02-14") - current-date()) return $days-left || " days left"');
