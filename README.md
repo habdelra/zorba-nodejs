@@ -31,7 +31,7 @@ When there is an error in your query--like the following code:
 
 ```js
 try {
-  console.log(require('zorba').execute('1 + WHAAAAAAAA'));
+  console.log(require('zorba-node').execute('1 + WHAAAAAAAA'));
 } catch(e) {
   console.error(e);
 }
