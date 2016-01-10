@@ -17,10 +17,12 @@ NAN_METHOD(execute) {
   std::ostringstream lOutputStream;
   Zorba_CompilerHints_t hints;
   zorba::XQuery_t query = zorbaInstance->createQuery();
+  Zorba_SerializerOptions lSerOptions;
+  lSerOptions.omit_xml_declaration = ZORBA_OMIT_XML_DECLARATION_YES;
 
   try {
     query->compile(sQuery, hints);
-    query->execute(lOutputStream);
+    query->execute(lOutputStream, &lSerOptions);
   } catch (const std::exception& ex) {
     zorba::XQueryException& e = (zorba::XQueryException&)ex;
     std::cout << e << std::endl;
