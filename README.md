@@ -1,8 +1,8 @@
 # zorba-nodejs
 
-This is a native nodejs binding for the Zorba that is inspired by https://github.com/Rod-O/zorba-node. This library leverages [Nan](https://github.com/nodejs/nan) so that is is supported on all versions of Node.js and Io.js. A prerequisite for this library is that Zorba is installed. Zorba can be installed using `brew install zorba` on a Mac, as well as `apt-get` on Linux. Visit the Zorba documentation for more information: http://www.zorba.io/download.
+This is a native nodejs binding for the Zorba that is inspired by https://github.com/Rod-O/zorba-node. This library leverages [Nan](https://github.com/nodejs/nan) so that it is supported on all versions of Node.js and Io.js. A prerequisite for this library is that Zorba is installed. Zorba can be installed using `brew install zorba` on a Mac, as well as `apt-get` on Linux. Visit the Zorba documentation for more information: http://www.zorba.io/download.
 
-After npm install this package, you can confirm that it works by executing:
+After `npm install` this package, you can confirm that it works by executing:
 ```
 $ node example.js
 ```
