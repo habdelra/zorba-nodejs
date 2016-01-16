@@ -19,11 +19,16 @@ An example of this library's usage is:
 var zorba = require('zorba-node');
 
 try {
-  var result = zorba.execute('let $days-left := days-from-duration(xs:date("2016-02-14") - current-date()) return $days-left || " days left"');
+  var result = zorba.execute('1+1');
   console.log(result);
 } catch (e) {
   console.error(e);
 }
+```
+
+the output is:
+```
+> 2
 ```
 
 When there is an error in your query--like the following code:
