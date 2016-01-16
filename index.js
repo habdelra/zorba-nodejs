@@ -8,7 +8,7 @@ function resolveUris(jsoniq, modulePath) {
     path = path.slice(-1) === '/' ? path + INDEX_JQ : path + JQ_EXTENSION;
     path = path.charAt(0) === '/' ? path.substring(1) : path;
     var hostSplit = host.split('.');
-    var absolutePath = __dirname + ( !modulePath || modulePath === '.'  ? '' :  '/' + modulePath );
+    var absolutePath = !modulePath || modulePath === '.'  ? '' :  modulePath;
     for(var i = hostSplit.length - 1; i >= 0; i--) {
       absolutePath += '/' + hostSplit[i];
     }
